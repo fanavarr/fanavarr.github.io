@@ -13,8 +13,8 @@ permalink:        /blog/:year/:month/:day/:title
 title:            'Jekyll Metro'
 tagline:          'A Metro theme for Jekyll'
 description:      'A Sample blog using Jekyll Metro'
-url:              'http://fanavarr.github.io'
-baseurl:          'http://fanavarr.github.io'
+url:              'https://fanavarr.github.io'
+baseurl:          'https://fanavarr.github.io'
 
 # Navigation
 navigation:
