@@ -12,7 +12,7 @@ permalink:        /blog/:year/:month/:day/:title
 # Setup
 title:            'Fabian Navarro'
 tagline:          'A Metro theme for Jekyll'
-description:      'Fabian Navarro"'"s site'
+description:      'Fabian Navarro site'
 url:              'https://fanavarr.github.io'
 baseurl:          'https://fanavarr.github.io'
 
