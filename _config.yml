@@ -36,18 +36,18 @@ navigation:
 author:         'Abdel Raoof Olakara'
 
 #Social Media links (Use complete URL except for email)
-dribbble:
+#dribbble:
 email:
 facebook:       'https://www.facebook.com/olakara'
-flickr:
-github:         'https://github.com/olakara'
-gplus:          'https://plus.google.com/100425464897246255887/'
-instagram:
-pinterest:
-linkedin:       'https://ae.linkedin.com/in/olakara/'
-rss:
-stackoverflow:  'http://stackoverflow.com/users/185655/abdel-raoof'
-twitter:        'https://twitter.com/olakara'
+#flickr:
+github:         'https://github.com/fanavarr'
+#gplus:          'https://plus.google.com/100425464897246255887/'
+#instagram:
+#pinterest:
+linkedin:       'https://ae.linkedin.com/in/fanavarr/'
+#rss:
+#stackoverflow:  'http://stackoverflow.com/users/185655/abdel-raoof'
+#twitter:        'https://twitter.com/olakara'
 
 # Google Analytics
 gahandler: 'UA-52149651-1'
