@@ -11,7 +11,7 @@ permalink:        /blog/:year/:month/:day/:title
 
 # Setup
 title:            'Fabian Navarro'
-tagline:          'A Metro theme for Jekyll'
+tagline:          'My Site'
 description:      'Fabian Navarro site'
 url:              'https://fanavarr.github.io'
 baseurl:          'https://fanavarr.github.io'
@@ -41,13 +41,13 @@ email:
 facebook:       'https://www.facebook.com/olakara'
 #flickr:
 github:         'https://github.com/fanavarr'
-#gplus:          'https://plus.google.com/100425464897246255887/'
+#gplus:          
 #instagram:
 #pinterest:
-linkedin:       'https://ae.linkedin.com/in/fanavarr/'
+linkedin:       'https://www.linkedin.com/in/fanavarr/'
 #rss:
-#stackoverflow:  'http://stackoverflow.com/users/185655/abdel-raoof'
-#twitter:        'https://twitter.com/olakara'
+#stackoverflow:  
+#twitter:        
 
 # Google Analytics
 gahandler: 'UA-52149651-1'
