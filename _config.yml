@@ -10,9 +10,9 @@ gems: [jekyll-paginate]
 permalink:        /blog/:year/:month/:day/:title
 
 # Setup
-title:            'Jekyll Metro'
+title:            'Fabian Navarro'
 tagline:          'A Metro theme for Jekyll'
-description:      'A Sample blog using Jekyll Metro'
+description:      'Fabian Navarro"'"s site'
 url:              'https://fanavarr.github.io'
 baseurl:          'https://fanavarr.github.io'
 
@@ -33,7 +33,7 @@ navigation:
 
 
 # Author Details
-author:         'Abdel Raoof Olakara'
+author:         'Fabian Navarro'
 
 #Social Media links (Use complete URL except for email)
 #dribbble:
