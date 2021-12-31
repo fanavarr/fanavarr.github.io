@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hi, I Fabian Navarro!
+title: Hi, I am Fabian Navarro!
 description: About Me page of Fabian Navarro
 theme: purple
 ---
