@@ -1,13 +1,15 @@
 ---
 layout: page
-title: Hi, I am Fabian Navarro!
+title: Hi, I am Fabian !
 description: About Me page of Fabian Navarro
 theme: purple
 ---
 
+
 So. Here is the thing... I am a security analyst with 5 years experience, or something like that (who's counting anyways), trying to make my way into Digital Forensics and Threat hunting.
 
 Here you will find some of the stuff I write on my way to becoming a DFIR analyst?, so consider this my blog and portfolio, I hope you find this helpful.
+
 
 
 ## Contact Me
