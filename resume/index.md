@@ -4,13 +4,9 @@ title: Resume
 description: Resume of Abdel Raoof
 theme: red
 ---
-Six years of experience in software development on Microsoft and Java technologies. Experienced in design and development of enterprise web applications, content management systems and enterprise application integration.
 
-**Experience in Web Technology:**
-Building and Supporting web applications using Microsoft Technologies (ASP.Net & ASP.Net MVC). Developing UI using Ext JS and jQuery.
+Hi, currently I work as an Incident Responder and Security Analyst identifying security flaws and vulnerabilities, performing security audits, some threat hunting exercises and Digital forensics.
 
-**Experience in Enterprise Content Management:**
-Implemented custom applications for content and knowledge management. Have also worked with leading industry ECM applications like SharePoint 2013, MOSS 2007, SharePoint 2010 and Documentum.
 
 <!-- Skills -->
 <section class="row">
@@ -22,18 +18,16 @@ Implemented custom applications for content and knowledge management. Have also 
 			<div class="col-md-6">
 				<ul class="list-group">
 					<li class="list-group-item active"><h4><strong>Programming</strong></h4></li>
-					<li class="list-group-item">C#</li>
-					<li class="list-group-item">ASP.Net / ASP.Net MVC</li>
-					<li class="list-group-item">Javascript</li>
-					<li class="list-group-item">HTML & CSS</li>
+					<li class="list-group-item">Python</li>
+					<li class="list-group-item">Shell Scripting</li>
 				</ul>
 			</div>
 			<div class="col-md-6">
 				<ul class="list-group">
 					<li class="list-group-item active"><h4><strong>Specialties</strong></h4></li>
-					<li class="list-group-item">.Net Web Technologies</li>
-					<li class="list-group-item">SharePoint 2013</li>
-					<li class="list-group-item">Sencha Ext Js</li>
+					<li class="list-group-item">Threat Hunting</li>
+					<li class="list-group-item">Digital Forensics</li>
+					<li class="list-group-item">Web Application Penetrationtesting</li>
 				</ul>
 			</div>
 		</div>
@@ -43,17 +37,29 @@ Implemented custom applications for content and knowledge management. Have also 
 <!-- Education -->
 <section class="row">
 	<header class="col-md-3">
-		<h3 style="text-transform:uppercase;color:gray">Education</h3>
+		<h3 style="text-transform:uppercase;color:gray">Certifications/h3>
 	</header>
 	<div class="col-md-9">
 		<ul>
 			<li>
-				<h4>Master of Computer Applications (MCA)</h4>
-				<p>2004-2007 - Vellore Institute of Technology</p>
+				<h4>Web Application Penetration Tester</h4>
+				<p>2019 - ElearnSecurity - INE</p>
 			</li>
 			<li>
-				<h4>Bachelor of Sscience - Computer Science</h4>
-				<p>2001-2004 - University of Calicut</p>
+				<h4>Junior Penetration Tester</h4>
+				<p>2019 - ElearnSecurity - INE</p>
+			</li>
+			<li>
+				<h4>Comptia CySA+</h4>
+				<p>2018 - Comptia </p>
+			</li>
+			<li>
+				<h4>AWS CCP</h4>
+				<p>2020 - AWS</p>
+			</li>
+			<li>
+				<h4>Splunk Certified Administrator</h4>
+				<p>2018 - Splunk</p>
 			</li>
 		</ul>
 	</div>
@@ -67,24 +73,24 @@ Implemented custom applications for content and knowledge management. Have also 
 	<div class="col-md-9">
 		<ul>
 			<li>
-				<h4>C4 Advanced Solutions</h4>
+				<h4>CDEV Lightspeed Development</h4>
 				<h5>Present</h5>
-				<p>Working as Application Developer</p>
+				<p>Working as Incident Responder/p>
 			</li>
 			<li>
-				<h4>Abdul Samad Al Qurashi</h4>
-				<h5>March 2010 - January 2013</h5>
-				<p>Worked as Web Developer</p>
+				<h4>Oracle</h4>
+				<h5>Sep 2019 - Oct 2020</h5>
+				<p>Security Developer Operations Analyst</p>
 			</li>
 			<li>
-				<h4>Samsung SDS</h4>
-				<h5>May 2009 - March 2010</h5>
-				<p>Worked as Web Developer with MIS team</p>
+				<h4>Equifax</h4>
+				<h5>Jun 2018 - Sep 2019</h5>
+				<p>Information Security Analyst</p>
 			</li>
 			<li>
-				<h4>Honeywell Technology Solutions</h4>
-				<h5>December 2006 - December 2008</h5>
-				<p>Worked as Project Trainee & later Software Engineer</p>
+				<h4>Juniper Networks</h4>
+				<h5>Nov 2016 - Apr 2018 /h5>
+				<p>Network Security Manager Support Engineer</p>
 			</li>
 		</ul>
 	</div>
