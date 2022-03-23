@@ -75,7 +75,7 @@ Hi, currently I work as an Incident Responder and Security Analyst identifying s
 			<li>
 				<h4>CDEV Lightspeed Development</h4>
 				<h5>Present</h5>
-				<p>Working as Incident Responder/p>
+				<p>Working as Incident Responder</p>
 			</li>
 			<li>
 				<h4>Oracle</h4>
