@@ -37,7 +37,7 @@ Hi, currently I work as an Incident Responder and Security Analyst identifying s
 <!-- Education -->
 <section class="row">
 	<header class="col-md-3">
-		<h3 style="text-transform:uppercase;color:gray">Certifications/h3>
+		<h3 style="text-transform:uppercase;color:gray">Certifications</h3>
 	</header>
 	<div class="col-md-9">
 		<ul>
@@ -89,7 +89,7 @@ Hi, currently I work as an Incident Responder and Security Analyst identifying s
 			</li>
 			<li>
 				<h4>Juniper Networks</h4>
-				<h5>Nov 2016 - Apr 2018 /h5>
+				<h5>Nov 2016 - Apr 2018 </h5>
 				<p>Network Security Manager Support Engineer</p>
 			</li>
 		</ul>
