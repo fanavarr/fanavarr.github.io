@@ -5,9 +5,9 @@ description: About Me page of Fabian Navarro
 theme: purple
 ---
 
-So. Here is the thing... I am a security analyst with web application pentesting experience, 5 years or something like that (who's counting anyways), trying to make my way into Cloud, DevSecOps and a bit of Javascript web development.
+So. Here is the thing... I am a security analyst with 5 years experience, or something like that (who's counting anyways), trying to make my way into Digital Forensics and Threat hunting.
 
-Here you will find some of the stuff I write on my way to becoming an Application Security Engineer / DevSecOps / Developer sort of frankenstein, so you can consider this my blog and portfolio?...  Anyways, I hope you find this helpful.
+Here you will find some of the stuff I write on my way to becoming a DFIR analyst?, so consider this my blog and portfolio, I hope you find this helpful.
 
 
 ## Contact Me
