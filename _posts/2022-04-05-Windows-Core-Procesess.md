@@ -35,7 +35,7 @@ It is responsible for the windows authentication and manages the creation of sec
 | Childs | None |
 | Parent | wininit.exe |
 | Priority | 9 |
-| instances | 1 |
+| instances | one |
 | Path | %Systemroot%\system32\lsass.exe |
 | Owner: | NT AUTHORITY\SYSTEM (S-1-5-18) |
 
