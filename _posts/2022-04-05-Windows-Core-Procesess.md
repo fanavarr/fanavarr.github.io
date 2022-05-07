@@ -126,14 +126,16 @@ It also maintains an in-memory database of service information that can be query
 ### Task host Process (Taskhostw.exe)
 Acts as a host for processes that run from DLLs rather than exe’s.
 At startup it checks the services portion of the registry to construct a list of dll based services and load them.
- 
-    Parent Process: svchost.exe
-    User / Owner: Varies
-    Path: %Systemroot%\system32\taskhostw.exe
-    Number of instances: multiple 
-    Child Processes: None
-    Base Priority: 8
 
+| Taskhostw.exe  |          |
+| ----------- | ----------- |
+| Qty | Multiple |
+| Childs | None |
+| Parent | svchost.exe |
+| Priority | 8 |
+| Path |   %Systemroot%\system32\taskhostw.exe |
+| Owner | Varies |  
+ 
  
 ### Windows Explorer (explorer.exe)
 Responsible for user desktop, including file browser and launching files via their file extensions.
