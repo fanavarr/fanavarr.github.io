@@ -32,7 +32,7 @@ It is responsible for the windows authentication and manages the creation of sec
 
 | Process     | lsass.exe |
 | ----------- | ----------- |
-| Instance | 1 |
+| Qty | 1 |
 | Childs | None |
 | Parent | wininit.exe |
 | Priority | 9 |
