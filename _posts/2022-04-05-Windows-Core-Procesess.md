@@ -91,7 +91,7 @@ It launches LogonUI.exe for users to input credentials and then passes it to lsa
 | Childs | “LogonUI.exe”, “userinit.exe”, “dwm.exe”, “fontdrvhost.exe” and anything else listed in the “Userinit” value |
 | Parent | Orphan process (Parent was the SMSS.EXE child process with session > 0) |
 | Priority | 13 |
-| Path |  %Systemroot%\system32\ winlogon.exe |
+| Path |  %Systemroot%\system32\winlogon.exe |
 | Owner | NT AUTHORITY\SYSTEM (S-1-5-18) | 
  
  
@@ -99,25 +99,29 @@ It launches LogonUI.exe for users to input credentials and then passes it to lsa
 Responsible for launch services.exe and lsass.exe in session 0, also it sets default environment variables like USERPROFILE, ALLUSERPROFILE, PUBLIC and
 ProgramData, sets the LSA encryption key and creates temp directory in the system root. 
  
-    Parent Process: Orphan process (Parent was the sessions 0 SMSS.EXE during boot)
-    User / Owner: NT AUTHORITY\SYSTEM (S-1-5-18)
-    Path: %Systemroot%\system32\wininit.exe
-    Number of instances: 1 
-    Child Processes: “services.exe”, “lsass.exe”, “fontdrvhost.exe”
-    Base Priority: 13
+| wininit.exe  |          |
+| ----------- | ----------- |
+| Qty | 1 |
+| Childs | “services.exe”, “lsass.exe”, “fontdrvhost.exe” |
+| Parent | Orphan process (Parent was the sessions 0 SMSS.EXE during boot) |
+| Priority | 13 |
+| Path | %Systemroot%\system32\wininit.exe |
+| Owner | NT AUTHORITY\SYSTEM (S-1-5-18) | 
  
  
 ### Service Control Manager Process (Services.exe)
 Responsible for loading services on auto-start and device drivers into memory.
 It also maintains an in-memory database of service information that can be query with sc.exe
 
-    Parent Process: wininit.exe
-    User / Owner: NT AUTHORITY\SYSTEM (S-1-5-18)
-    Path: %Systemroot%\system32\services.exe
-    Number of instances: 1 
-    Child Processes: Multiple (Any services defined in “HKLM/SYSTEM/CurrentControlSet/Services/”); For example: “svchost.exe”, “SearchIndexer.exe” …etc.)
-    Base Priority: 9
-
+| Services.exe  |          |
+| ----------- | ----------- |
+| Qty | 1 |
+| Childs | Multiple (Any services defined in “HKLM/SYSTEM/CurrentControlSet/Services/”); For example: “svchost.exe”, “SearchIndexer.exe” …etc.) |
+| Parent | Orphan process (Parent was the sessions 0 SMSS.EXE during boot) |
+| Priority | 9 |
+| Path |  %Systemroot%\system32\services.exe |
+| Owner | NT AUTHORITY\SYSTEM (S-1-5-18) |  
+ 
     
 ### Task host Process (Taskhostw.exe)
 Acts as a host for processes that run from DLLs rather than exe’s.
