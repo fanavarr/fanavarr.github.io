@@ -49,7 +49,7 @@ Responsible for hosting multiple services DLLs into generic shared service proce
 | svchost.exe  |          |
 | ----------- | ----------- |
 | Qty | Multiple |
-| Childs | M |
+| Childs | Multiple |
 | Parent | services.exe |
 | Priority | 8 |
 | Path | %Systemroot%\system32\svchost.exe |
@@ -58,14 +58,16 @@ Responsible for hosting multiple services DLLs into generic shared service proce
 ### Session Manager (smss.exe)
 It creates new sessions, also it creates the list of environments variables. 
 Session 0 starts csrss.exe and wininit.exe which are OS services; Session 1 starts csrss.exe and winlogon.exe which are under User Session.
-  
-    Parent Process: System
-    User / Owner: NT AUTHORITY\SYSTEM (S-1-5-18)
-    Path: %Systemroot%\system32\ smss.exe
-    Number of instances: Multiple, but only one without arguments after booting up
-    Child Processes: SMSS.EXE (Session 0), SMSS.EXE (Session 1), AUTOCHK.EXE and a new SMSS.EXE instance for each new session
-    Base Priority: 11
 
+| smss.exe  |          |
+| ----------- | ----------- |
+| Qty | Multiple, but only one without arguments after booting up |
+| Childs | SMSS.EXE (Session 0), SMSS.EXE (Session 1), AUTOCHK.EXE and a new SMSS.EXE instance for each new session |
+| Parent | System |
+| Priority | 11 |
+| Path | %Systemroot%\system32\ smss.exe |
+| Owner | NT AUTHORITY\SYSTEM (S-1-5-18) |
+ 
   
 ### Client Server Run Subsystem Process (csrss.exe)
 Responsible for managing process and threads, as well as making windows API available for processes.
