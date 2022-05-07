@@ -156,7 +156,7 @@ capability to interface with hardware and the file system. Broker processes such
 access for UWP apps. Generally, there will be one RuntimeBroker.exe for each UWP app. For example, starting Calculator.exe will cause a corresponding
 RuntimeBroker.exe process to initiate.
  
-| RuntimeBroker.exe  |          
+| RuntimeBroker.exe  |          |
 | ----------- | ----------- |
 | Qty | Multiple |
 | Childs | None |
