@@ -139,14 +139,16 @@ At startup it checks the services portion of the registry to construct a list of
  
 ### Windows Explorer (explorer.exe)
 Responsible for user desktop, including file browser and launching files via their file extensions.
- 
-    Parent Process: Orphan process (Parent was userinit.exe during boot)
-    User / Owner: As logged-on users
-    Path: %Systemroot%\explorer.exe
-    Number of instances: multiple 
-    Child Processes: None
-    Base Priority: 8
 
+| explorer.exe  |          |
+| ----------- | ----------- |
+| Qty | Multiple |
+| Childs | None |
+| Parent | Orphan process (Parent was userinit.exe during boot) |
+| Priority | 8 |
+| Path | %Systemroot%\explorer.exe |
+| Owner | As logged-on users |  
+ 
  
 ### Runtime Broker (RuntimeBroker.exe)
 Acts as a proxy between the constrained Universal Windows Platform (UWP) apps (formerly called Metro apps) and the full Windows API. UWP apps have limited
@@ -154,14 +156,14 @@ capability to interface with hardware and the file system. Broker processes such
 access for UWP apps. Generally, there will be one RuntimeBroker.exe for each UWP app. For example, starting Calculator.exe will cause a corresponding
 RuntimeBroker.exe process to initiate.
  
-    Parent Process: “svchost.exe”
-    User / Owner: Typically, the logged-on user(s)
-    Path: %SystemRoot%\System32\RuntimeBroker.exe
-    Number of instances: 1 or more
-    Child Processes: None
-    Base Priority: 8
- 
- 
+| RuntimeBroker.exe  |          
+| ----------- | ----------- |
+| Qty | Multiple |
+| Childs | None |
+| Parent | svchost.exe |
+| Priority | 8 |
+| Path |  %SystemRoot%\System32\RuntimeBroker.exe |
+| Owner | Typically, the logged-on user(s) |  
  
  
 All this information will help us to spot services masquerading as legitimate process or being used to execute malware.
