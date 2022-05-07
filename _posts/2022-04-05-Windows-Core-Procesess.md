@@ -30,14 +30,14 @@ Let’s review some of the windows core processes:
 ### Local Security Authority Subsystem (lsass.exe)
 It is responsible for the windows authentication and manages the creation of security tokens for AD, NetLogon and SAM, also writes the security event log.
 
-| Process      | lsass.exe |
+| Process     | lsass.exe |
 | ----------- | ----------- |
 | Childs | None |
 | Parent | wininit.exe |
 | Priority | 9 |
-| instances | one |
+| Instance | one |
 | Path | %Systemroot%\system32\lsass.exe |
-| Owner: | NT AUTHORITY\SYSTEM (S-1-5-18) |
+| Owner | NT AUTHORITY\SYSTEM (S-1-5-18) |
 
 
 
