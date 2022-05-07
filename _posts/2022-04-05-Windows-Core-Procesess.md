@@ -38,10 +38,7 @@ It is responsible for the windows authentication and manages the creation of sec
 | Priority | 9 |
 | Path | %Systemroot%\system32\lsass.exe |
 | Owner | NT AUTHORITY\SYSTEM (S-1-5-18) |
-
-
-
-    
+   
 
 ### Generic Service Host Process (svchost.exe)
 Responsible for hosting multiple services DLLs into generic shared service process, it should never exist without the “-k <name>” argument.
@@ -54,7 +51,8 @@ Responsible for hosting multiple services DLLs into generic shared service proce
 | Priority | 8 |
 | Path | %Systemroot%\system32\svchost.exe |
 | Owner | NT AUTHORITY\SYSTEM (S-1-5-18), NT AUTHORITY\LOCAL SERVICE(S-1-5-19), NT AUTHORITY\NETWORK SERVICE(S-1-5-20) |
-  
+ 
+ 
 ### Session Manager (smss.exe)
 It creates new sessions, also it creates the list of environments variables. 
 Session 0 starts csrss.exe and wininit.exe which are OS services; Session 1 starts csrss.exe and winlogon.exe which are under User Session.
@@ -65,33 +63,37 @@ Session 0 starts csrss.exe and wininit.exe which are OS services; Session 1 star
 | Childs | SMSS.EXE (Session 0), SMSS.EXE (Session 1), AUTOCHK.EXE and a new SMSS.EXE instance for each new session |
 | Parent | System |
 | Priority | 11 |
-| Path | %Systemroot%\system32\ smss.exe |
+| Path | %Systemroot%\system32\smss.exe |
 | Owner | NT AUTHORITY\SYSTEM (S-1-5-18) |
  
   
 ### Client Server Run Subsystem Process (csrss.exe)
 Responsible for managing process and threads, as well as making windows API available for processes.
 It also creates temp files, map drive letters and handles the shutdown process, it will be available for each newly user session and runs on Session 0 and 1.
+ 
+| csrss.exe  |          |
+| ----------- | ----------- |
+| Qty | Typically, 2 instances |
+| Childs | None |
+| Parent | Orphan process (Parent was the SMSS.EXE child process of the master SMSS.EXE) |
+| Priority | 13 |
+| Path |  %Systemroot%\system32\csrss.exe |
+| Owner | NT AUTHORITY\SYSTEM (S-1-5-18) | 
 
-    Parent Process: Orphan process (Parent was the SMSS.EXE child process of the master SMSS.EXE)
-    User / Owner: NT AUTHORITY\SYSTEM (S-1-5-18)
-    Path: %Systemroot%\system32\ csrss.exe
-    Number of instances: typically, 2 instances.
-    Child Processes: None
-    Base Priority: 13
-
-
+ 
 ### Windows Logon Process (Winlogon.exe)
 Responsible for user logons and logoffs. 
 It launches LogonUI.exe for users to input credentials and then passes it to lsass.exe for AD / SAM verification. 
-  
-    Parent Process: Orphan process (Parent was the SMSS.EXE child process with session > 0)
-    User / Owner: NT AUTHORITY\SYSTEM (S-1-5-18)
-    Path: %Systemroot%\system32\ winlogon.exe
-    Number of instances: 1 per user session
-    Child Processes: “LogonUI.exe”, “userinit.exe”, “dwm.exe”, “fontdrvhost.exe” and anything else listed in the “Userinit” value
-    Base Priority: 13
 
+| Winlogon.exe  |          |
+| ----------- | ----------- |
+| Qty | 1 per user session |
+| Childs | “LogonUI.exe”, “userinit.exe”, “dwm.exe”, “fontdrvhost.exe” and anything else listed in the “Userinit” value |
+| Parent | Orphan process (Parent was the SMSS.EXE child process with session > 0) |
+| Priority | 13 |
+| Path |  %Systemroot%\system32\ winlogon.exe |
+| Owner | NT AUTHORITY\SYSTEM (S-1-5-18) | 
+ 
  
 ### Windows Initialization Process (wininit.exe) 
 Responsible for launch services.exe and lsass.exe in session 0, also it sets default environment variables like USERPROFILE, ALLUSERPROFILE, PUBLIC and
