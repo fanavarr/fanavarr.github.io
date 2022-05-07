@@ -46,13 +46,14 @@ It is responsible for the windows authentication and manages the creation of sec
 ### Generic Service Host Process (svchost.exe)
 Responsible for hosting multiple services DLLs into generic shared service process, it should never exist without the “-k <name>” argument.
 
-    Parent Process: services.exe
-    User / Owner: NT AUTHORITY\SYSTEM (S-1-5-18), NT AUTHORITY\LOCAL SERVICE(S-1-5-19), NT AUTHORITY\NETWORK SERVICE(S-1-5-20)
-    Path: %Systemroot%\system32\ svchost.exe
-    Number of instances: Multiple
-    Child Processes: Multiple
-    Base Priority: 8
-
+| svchost.exe  |          |
+| ----------- | ----------- |
+| Qty | Multiple |
+| Childs | M |
+| Parent | services.exe |
+| Priority | 8 |
+| Path | %Systemroot%\system32\svchost.exe |
+| Owner | NT AUTHORITY\SYSTEM (S-1-5-18), NT AUTHORITY\LOCAL SERVICE(S-1-5-19), NT AUTHORITY\NETWORK SERVICE(S-1-5-20) |
   
 ### Session Manager (smss.exe)
 It creates new sessions, also it creates the list of environments variables. 
