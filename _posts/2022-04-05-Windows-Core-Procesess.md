@@ -165,7 +165,7 @@ RuntimeBroker.exe process to initiate.
 | Path |  %SystemRoot%\System32\RuntimeBroker.exe |
 | Owner | Typically, the logged-on user(s) |  
  
- 
+   
 All this information will help us to spot services masquerading as legitimate process or being used to execute malware.
 One of the best resources to keep track of this process is [Winprocs](https://winprocs.dfir.tips "Title") by dfirtips.
 
