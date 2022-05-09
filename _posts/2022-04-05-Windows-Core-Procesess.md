@@ -176,7 +176,7 @@ One of the best resources to keep track of this process is [Winprocs](https://wi
  
  This can be checked with programs such process hacker
  
- ![](https://github.com/fanavarr/fanavarr.github.io/blob/master/assets/images/Explorer_hacker.PNG)
+ <img src="/assets/images/Explorer_hacker.PNG" alt="">
  
 <br/>
  
