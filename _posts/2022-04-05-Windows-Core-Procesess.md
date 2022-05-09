@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Normal Core Windows Procesess 
+title:  Revewiwing Windows Procesess 
 date:   2022-04-05 18:30:00
 tags:
 - Windows
@@ -10,8 +10,8 @@ tags:
 
 
 
-One of the most important things for detection is getting to know the windows processes, Windows does have a lot of processes which are present every time we boot a machine, when reviewing a possible compromised host process, we should ask the following questions:
-
+One of the most important things for detection is getting to know the windows processes, Windows does have a lot of processes which are present every time we boot a
+machine, when reviewing a possible compromised host process, we should ask the following questions:
 
 
  - Are the processes signed?
@@ -21,11 +21,14 @@ One of the most important things for detection is getting to know the windows pr
  - Does it have the expected parent process?
  - How many instances should exist?
   
-  
-Hence it becomes a must to have information available about the normal behavior of this processes like for example number of instances that should be running, parent process path, etc.
+ 
+ 
+Hence it becomes a must to have information available about the normal behavior of this processes like for example number of instances that should be running, parent
+process path, etc.
 Any anomaly on this parameter should immediately call our attention.
 
 Let’s review some of the windows core processes:
+
 
 ### Local Security Authority Subsystem (lsass.exe)
 It is responsible for the windows authentication and manages the creation of security tokens for AD, NetLogon and SAM, also writes the security event log.
