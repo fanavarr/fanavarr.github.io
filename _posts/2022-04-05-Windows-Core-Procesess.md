@@ -168,8 +168,16 @@ RuntimeBroker.exe process to initiate.
 | Path |  %SystemRoot%\System32\RuntimeBroker.exe |
 | Owner | Typically, the logged-on user(s) |  
  
-<br/><br/>   
+<br/> 
 All this information will help us to spot services masquerading as legitimate process or being used to execute malware.
 One of the best resources to keep track of this process is [Winprocs](https://winprocs.dfir.tips "Title") by dfirtips.
 
+ But how can details such as Priority os a process could be checked?
  
+ This can be checked with programs such process hacker
+ 
+ ![](https://github.com/fanavarr/fanavarr.github.io/blob/master/assets/images/Explorer_hacker.PNG)
+ 
+<br/>
+ 
+ ![](https://github.com/fanavarr/fanavarr.github.io/blob/master/assets/images/Explorer_hacker2.PNG)
