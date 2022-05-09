@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Revewiwing Windows Procesess 
+title:  Reviewing Windows Core Procesess 
 date:   2022-04-05 18:30:00
 tags:
 - Windows
