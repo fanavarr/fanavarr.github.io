@@ -180,4 +180,4 @@ One of the best resources to keep track of this process is [Winprocs](https://wi
  
 <br/>
  
- ![](https://github.com/fanavarr/fanavarr.github.io/blob/master/assets/images/Explorer_hacker2.PNG)
+ <img src="/assets/images/Explorer_hacker2.PNG" alt="">
