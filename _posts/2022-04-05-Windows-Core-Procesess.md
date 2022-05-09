@@ -41,7 +41,7 @@ It is responsible for the windows authentication and manages the creation of sec
 | Priority | 9 |
 | Path | %Systemroot%\system32\lsass.exe |
 | Owner | NT AUTHORITY\SYSTEM (S-1-5-18) |
-   
+<br/>   
 
 ### Generic Service Host Process (svchost.exe)
 Responsible for hosting multiple services DLLs into generic shared service process, it should never exist without the “-k <name>” argument.
@@ -54,7 +54,7 @@ Responsible for hosting multiple services DLLs into generic shared service proce
 | Priority | 8 |
 | Path | %Systemroot%\system32\svchost.exe |
 | Owner | NT AUTHORITY\SYSTEM (S-1-5-18), NT AUTHORITY\LOCAL SERVICE(S-1-5-19), NT AUTHORITY\NETWORK SERVICE(S-1-5-20) |
- 
+<br/> 
  
 ### Session Manager (smss.exe)
 It creates new sessions, also it creates the list of environments variables. 
@@ -68,7 +68,7 @@ Session 0 starts csrss.exe and wininit.exe which are OS services; Session 1 star
 | Priority | 11 |
 | Path | %Systemroot%\system32\smss.exe |
 | Owner | NT AUTHORITY\SYSTEM (S-1-5-18) |
- 
+<br/> 
   
 ### Client Server Run Subsystem Process (csrss.exe)
 Responsible for managing process and threads, as well as making windows API available for processes.
@@ -82,7 +82,7 @@ It also creates temp files, map drive letters and handles the shutdown process, 
 | Priority | 13 |
 | Path |  %Systemroot%\system32\csrss.exe |
 | Owner | NT AUTHORITY\SYSTEM (S-1-5-18) | 
-
+<br/>
  
 ### Windows Logon Process (Winlogon.exe)
 Responsible for user logons and logoffs. 
@@ -96,7 +96,7 @@ It launches LogonUI.exe for users to input credentials and then passes it to lsa
 | Priority | 13 |
 | Path |  %Systemroot%\system32\winlogon.exe |
 | Owner | NT AUTHORITY\SYSTEM (S-1-5-18) | 
- 
+<br/> 
  
 ### Windows Initialization Process (wininit.exe) 
 Responsible for launch services.exe and lsass.exe in session 0, also it sets default environment variables like USERPROFILE, ALLUSERPROFILE, PUBLIC and
@@ -110,7 +110,7 @@ ProgramData, sets the LSA encryption key and creates temp directory in the syste
 | Priority | 13 |
 | Path | %Systemroot%\system32\wininit.exe |
 | Owner | NT AUTHORITY\SYSTEM (S-1-5-18) | 
- 
+<br/> 
  
 ### Service Control Manager Process (Services.exe)
 Responsible for loading services on auto-start and device drivers into memory.
@@ -124,7 +124,7 @@ It also maintains an in-memory database of service information that can be query
 | Priority | 9 |
 | Path |  %Systemroot%\system32\services.exe |
 | Owner | NT AUTHORITY\SYSTEM (S-1-5-18) |  
- 
+<br/> 
     
 ### Task host Process (Taskhostw.exe)
 Acts as a host for processes that run from DLLs rather than exe’s.
@@ -138,7 +138,7 @@ At startup it checks the services portion of the registry to construct a list of
 | Priority | 8 |
 | Path |   %Systemroot%\system32\taskhostw.exe |
 | Owner | Varies |  
- 
+<br/> 
  
 ### Windows Explorer (explorer.exe)
 Responsible for user desktop, including file browser and launching files via their file extensions.
@@ -151,7 +151,7 @@ Responsible for user desktop, including file browser and launching files via the
 | Priority | 8 |
 | Path | %Systemroot%\explorer.exe |
 | Owner | As logged-on users |  
- 
+<br/>
  
 ### Runtime Broker (RuntimeBroker.exe)
 Acts as a proxy between the constrained Universal Windows Platform (UWP) apps (formerly called Metro apps) and the full Windows API. UWP apps have limited
@@ -181,3 +181,4 @@ One of the best resources to keep track of this process is [Winprocs](https://wi
 <br/>
  
  <img src="/assets/images/Explorer_hacker2.PNG" alt="">
+<br/>
