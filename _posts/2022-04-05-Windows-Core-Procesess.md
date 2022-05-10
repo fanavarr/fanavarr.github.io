@@ -41,6 +41,7 @@ It is responsible for the windows authentication and manages the creation of sec
 | Priority | 9 |
 | Path | %Systemroot%\system32\lsass.exe |
 | Owner | NT AUTHORITY\SYSTEM (S-1-5-18) |
+
 <br/>   
 
 ### Generic Service Host Process (svchost.exe)
@@ -54,6 +55,7 @@ Responsible for hosting multiple services DLLs into generic shared service proce
 | Priority | 8 |
 | Path | %Systemroot%\system32\svchost.exe |
 | Owner | NT AUTHORITY\SYSTEM (S-1-5-18), NT AUTHORITY\LOCAL SERVICE(S-1-5-19), NT AUTHORITY\NETWORK SERVICE(S-1-5-20) |
+ 
 <br/> 
  
 ### Session Manager (smss.exe)
@@ -68,6 +70,7 @@ Session 0 starts csrss.exe and wininit.exe which are OS services; Session 1 star
 | Priority | 11 |
 | Path | %Systemroot%\system32\smss.exe |
 | Owner | NT AUTHORITY\SYSTEM (S-1-5-18) |
+ 
 <br/> 
   
 ### Client Server Run Subsystem Process (csrss.exe)
@@ -82,6 +85,7 @@ It also creates temp files, map drive letters and handles the shutdown process, 
 | Priority | 13 |
 | Path |  %Systemroot%\system32\csrss.exe |
 | Owner | NT AUTHORITY\SYSTEM (S-1-5-18) | 
+ 
 <br/>
  
 ### Windows Logon Process (Winlogon.exe)
@@ -96,6 +100,7 @@ It launches LogonUI.exe for users to input credentials and then passes it to lsa
 | Priority | 13 |
 | Path |  %Systemroot%\system32\winlogon.exe |
 | Owner | NT AUTHORITY\SYSTEM (S-1-5-18) | 
+ 
 <br/> 
  
 ### Windows Initialization Process (wininit.exe) 
@@ -110,6 +115,7 @@ ProgramData, sets the LSA encryption key and creates temp directory in the syste
 | Priority | 13 |
 | Path | %Systemroot%\system32\wininit.exe |
 | Owner | NT AUTHORITY\SYSTEM (S-1-5-18) | 
+ 
 <br/> 
  
 ### Service Control Manager Process (Services.exe)
@@ -123,7 +129,8 @@ It also maintains an in-memory database of service information that can be query
 | Parent | Orphan process (Parent was the sessions 0 SMSS.EXE during boot) |
 | Priority | 9 |
 | Path |  %Systemroot%\system32\services.exe |
-| Owner | NT AUTHORITY\SYSTEM (S-1-5-18) |  
+| Owner | NT AUTHORITY\SYSTEM (S-1-5-18) | 
+ 
 <br/> 
     
 ### Task host Process (Taskhostw.exe)
@@ -138,6 +145,7 @@ At startup it checks the services portion of the registry to construct a list of
 | Priority | 8 |
 | Path |   %Systemroot%\system32\taskhostw.exe |
 | Owner | Varies |  
+ 
 <br/> 
  
 ### Windows Explorer (explorer.exe)
@@ -151,6 +159,7 @@ Responsible for user desktop, including file browser and launching files via the
 | Priority | 8 |
 | Path | %Systemroot%\explorer.exe |
 | Owner | As logged-on users |  
+ 
 <br/>
  
 ### Runtime Broker (RuntimeBroker.exe)
