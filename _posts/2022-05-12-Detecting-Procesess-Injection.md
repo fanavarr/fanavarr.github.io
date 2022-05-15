@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Detecting Windows Procesess Injection 
-date:   2022-12-05 13:30:00
+date:   2022-05-12 13:30:00
 tags:
 - Windows
 - DFIR
@@ -9,8 +9,7 @@ tags:
 
 <br/>
 One of the big topics on almost any Threat Hunting course material is Process Injection detection, hence I decide to write this post as a quick and dirty "how
-to", I will not go over the definition of what process injection is or the types that could be executed on a system, for that really awsome posts already exist
-[Elastic](https://www.elastic.co/blog/ten-process-injection-techniques-technical-survey-common-and-trending-process).
+to", I will not go over the definition of what process injection is or the types that could be executed on a system, for that really awsome posts already exist [elastic](https://www.elastic.co/blog/ten-process-injection-techniques-technical-survey-common-and-trending-process).
 <br/>
 
 ### Memhunter
